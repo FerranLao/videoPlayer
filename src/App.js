@@ -1,25 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import VideoHandler from './components/VideoHandler';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <VideoHandler videos={["https://www.youtube.com/watch?v=bzfG5LR0jWI&t=145s", "https://www.youtube.com/watch?v=5mkketnxB34"]}></VideoHandler>
+    </div >
   );
 }
 
