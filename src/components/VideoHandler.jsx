@@ -31,7 +31,7 @@ function VideoHandler({ videos, classes }) {
     console.log(mute)
     return (
         <div className={classes.videoContainer}>
-            {videos.map((url, index) => <ReactPlayer className={classes.video} url={url} playing={playing[index]} width="800px" volume="1" onPlay={() => playHandler(index)} muted={mute} />)}
+            {videos.map((url, index) => <ReactPlayer className={classes.video} controls url={url} playing={playing[index]} width="800px" volume="1" onPlay={() => playHandler(index)} muted={mute} />)}
             <Fab className={classes.mute} onClick={() => setMute(!mute)} >{mute ? <VolumeOffIcon /> : <VolumeUpIcon />}</Fab>
         </div>
     )
